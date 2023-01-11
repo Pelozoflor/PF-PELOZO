@@ -1,0 +1,134 @@
+*{
+    margin: 0;  
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+
+}
+
+#Menu{
+    background-color:#ffef5b;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+header{
+    font-style: oblique;
+    font-size: small;
+    color: red;
+}
+.Menu__Logo {
+    width: 10rem;
+    padding-left: 2rem;
+    align-content: center;
+    flex-direction: row;
+}
+.Menu__Secciones{
+    color: black;
+    font-size: large;
+    font-style: oblique;
+    height: 5rem;
+}
+
+.Menu__ul{
+    padding-left: 8rem;
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+.Portada{   
+    padding: 1.8rem;
+    background-image: url(../img/soles.jfif);
+    background-size: 12rem 6rem
+}
+
+.Portada__imagen{
+    padding-left: 15rem;
+    width: 45rem;
+    height: 20rem;
+    align-items: flex-end;
+
+}
+
+.Cuerpo__Parrafo{
+    
+    background-color: rgb(250, 219, 223);
+    padding: 4rem;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(172, 89, 165);
+    text-align: center;
+    line-height: 2;
+
+}
+
+   
+
+#GaleriaSalas{
+    background-image: url(../img/Fondo\ estrellas.jfif);
+    padding: 3rem;
+    display: flex;
+    font-style: italic;
+    justify-content: space-around;
+
+}
+
+.GaleriaSalas__Cuerpo{
+    width: 15rem;
+    align-items: center;
+    text-align: center;
+}
+
+.GaleriaSalas__Cuerpo img{
+    border: 5px;
+    margin-top: 1rem;
+}
+
+footer{
+    padding: 5rem;
+    background-color: rgb(163, 250, 221);
+    align-items: center;
+}
+
+.AvisoSitio{
+    width: 30rem;
+    height: 30rem;
+    padding: 5rem;
+    align-content: center;
+    font-size: larger;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.BotonVolver{
+    text-decoration: underline;
+    
+}
+
+.Formulario{
+    background-color: rgb(247, 247, 165);
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(54, 53, 53);
+    margin: 2rem 30rem;
+    text-align: end;
+    padding: 2rem;
+
+}
+
+.Formulario div{
+align-content: flex-end;
+padding: 1rem;
+}
+
+.Formulario h3{
+    text-align: center;
+}

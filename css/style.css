@@ -14,124 +14,54 @@ img{
 
 #Menu{
     background-color:#fff06c;
-    padding: 1rem;
+    padding-top: 1rem;
     display: flex;
     flex-direction: column;
-}
-
-#IndexResponsive {
-    display: grid;
-    grid-template-areas: 
-    "cabecera"
-    "Frase"
-    "Cuerpo"
-    "galeria"
-    "footer";
-    
-   grid-template-columns: repeat (1,1fr);
-   grid-template-rows: 1fr;
-}
-
-#Menu {
-    grid-template-columns: cabecera;
-}
-#Frase_Responsive{
-    grid-area: Frase;
-}
-#Cuerpo_Responsive{
-    grid-area: Cuerpo;
-}
-
-#Cuerpo_Responsive{
-    font-size: small;
-}
-#Galeria_Responsive{
-    grid-area: galeria;
-}
-#Galeria_Responsive{
-background-image: url(../img/Fondo\ estrellas.jfif);
-    padding: 2rem 4.5rem;
-    gap: 1rem;
-    /*display: flex;*/
-    font-style: italic;
-    justify-content: center;
-}
-
-
-#footer_Responsive{
-    grid-area: footer;
-}
-
-
-@media screen and (min-widht: 768px) {
-    #Galeria_Responsive{
-            padding: 2rem 7rem;
-            gap: 2rem;
-            /*display: flex;*/
-        }
-
-    
-    .Menu__Secciones{
-        font-size: large;
-        height: 3rem;
-    }
-    .Menu__ul{
-        padding-left: 5rem;
-        align-items: center;
-        gap: 1.2rem;
-    }
 }
 
 header{
     justify-content: center;
     font-style: oblique;
-    font-size: small;
     color: red;
     text-align: center;
-    padding: 1rem;
 }
 .Menu__Logo {
-    grid-area: "cabecera";
     width: 7rem;
-    /*padding-left: 2rem;*/
-    /*flex-direction: column;*/
     justify-items: center;
 }
 .Menu__Secciones{
-    grid-area: menu;
-    color: black;
+    display: flex;
     font-size:small;
     font-style: normal;
     height: 2rem;
+    padding: 1rem 0.5rem;
+    justify-content: center;
+
 }
 
 .Menu__ul{
-    /*padding-left: 8rem;*/
     list-style-type: none;
     display: flex;
     gap: 0.8rem;
 }
-.Portada{   
-    padding: 1.8rem;
+
+
+
+.Portada{  
+    display: flex;
+    justify-items: center; 
+    padding: 1.5rem;
     background-image: url(../img/soles.jfif);
     background-size: 12rem 6rem
 
 }
 
-.Portada__imagen{
-    
-
-}
-
-/*padding-left: 15rem;
-    width: 45rem;
-    height: 20rem;
-    align-items: flex-end;*/
+/*Parrafo-Frase*/
 
 .Cuerpo__Parrafo{
     
     background-color: rgb(250, 219, 223);
-    padding: 4rem;
+    padding: 3rem;
     font-style: italic;
     font-size: x-large;
     font-weight: bold;
@@ -142,6 +72,7 @@ header{
 }
 
    
+/*Galeria Inicio*/
 
 #GaleriaSalas{
     background-image: url(../img/Fondo\ estrellas.jfif);
@@ -149,6 +80,7 @@ header{
     display: flex;
     font-style: italic;
     justify-content: space-around;
+    
 
 }
 
@@ -158,10 +90,13 @@ header{
     text-align: center;
 }
 
-.GaleriaSalas__Cuerpo img{
+.GaleriaSalas__Cuerpo  a img{
     border: 5px;
     margin-top: 1rem;
+
 }
+
+/*Footer*/
 
 footer{
     padding: 2rem;
@@ -173,12 +108,20 @@ footer{
 
 footer ul li{
     margin: 1rem;
+    display: flex;
+    justify-content: center;
 }
 footer ul li a{
     color: blueviolet;
     font-weight: bold;
 }
 
+footer ul li{
+        color: blueviolet;
+        font-weight: bold;
+}
+
+/*Aviso sitio en Construccion*/
 .AvisoSitio{
     width: 30rem;
     height: 30rem;
@@ -197,6 +140,7 @@ footer ul li a{
     padding: 1rem;
     
 }
+/*Formulario Contacto*/
 
 .Formulario{
     background-color: rgb(247, 247, 165);
@@ -218,12 +162,11 @@ padding: 1rem;
     text-align: center;
 }
 
+/*Galeria*/
+
 .Galerias__Fondo{
     padding: 2rem;
     height: 60rem;
-   
-    
-    
 }
 
 .Galerias__Titulo{
@@ -236,6 +179,7 @@ padding: 1rem;
     font-style: italic;
 }
 
+/*Medidas Imagenes Fotos*/
 .maximo {
     width: 30rem;
     height: 40rem;
@@ -252,6 +196,8 @@ padding: 1rem;
     width: 30rem;
     height: 40rem;
 }
+
+/*Maternal*/
 .Fondo__AM{
     background-image: url(../img/GaleriaAnimalesMarinos/FondoAnimalesMarinos.jfif)
 
@@ -263,6 +209,11 @@ padding: 1rem;
 
 }
 
+.Btn__GaleriaAM{
+    background-color: aquamarine;
+}
+
+/*Principitos*/
 .Titulo__P {
     color: rgba(248, 73, 20, 0.87);
     background-color: rgb(81, 134, 247);
@@ -276,15 +227,11 @@ padding: 1rem;
     
 }
 
-.Btn__GaleriaAM{
-    background-color: aquamarine;
-
-}
-
 .Btn__GaleriaP{
     background-color: chartreuse;
 }
 
+/*Piratas*/
 .Btn__GaleriaPiratas{
     background-color: firebrick;
 }
@@ -300,6 +247,8 @@ padding: 1rem;
     color: rgba(0, 0, 0, 0.473);
 }
 
+/*Detectives*/
+
 .Btn__GaleriaD {
     background-color: darkgoldenrod;
 }
@@ -310,4 +259,352 @@ padding: 1rem;
 .Titulo__D{
     background-color: darkgoldenrod;
     color: saddlebrown;
+}
+
+/*Index Responsive*/
+#IndexResponsive {
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "Frase"
+    "Cuerpo"
+    "galeria"
+    "footer";
+    
+   grid-template-columns: repeat (1,1fr);
+   grid-template-rows: 1fr;
+   
+   height: 100vh;
+}
+
+#Menu {
+    grid-template-columns: cabecera;
+}
+#Frase_Responsive{
+    grid-area: Frase;
+}
+#Cuerpo_Responsive{
+    grid-area: Cuerpo;
+}
+
+#Cuerpo_Responsive{
+    font-size: small;
+}
+#Galeria_Responsive{
+    grid-area: galeria;
+}
+#GaleriaResponsive{
+background-image: url(../img/Fondo\ estrellas.jfif);
+    padding: 2rem 4rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+#footer_Responsive{
+    grid-area: footer;
+}
+
+
+@media screen and (min-width: 768px) {
+    
+   #GaleriaResponsive{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.Menu__Secciones{
+    display: flex;
+    justify-content: center;
+}
+
+.Menu__ul li a{
+    font-size: medium;
+    gap: 2rem;
+}
+}
+
+@media screen and (min-width: 1024px) {
+   #Menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-end;
+    padding: 1rem;
+   }
+   .Menu__ul li a{
+    font-size:large;
+    font-style: oblique;
+    flex-wrap: none ;
+   }
+
+   .Menu__ul{
+    gap: 3rem ;
+    justify-content: flex-end;
+    align-content: flex-end;
+    padding-top: 4rem  ;
+   }
+   .Portada{
+    display: flex;
+    justify-content: center;
+   }
+
+   footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+   }
+}
+
+ /*Nuestra Historia*/
+
+ #MenuNG{
+    background-color:#fff06c;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.Menu__SeccionesNH{
+    display: flex;
+    font-size:small;
+    font-style: normal;
+    height: 2rem;
+    padding: 1rem 0.5rem;
+    justify-content: center;
+
+}
+
+.Menu__ulNH{
+    list-style-type: none;
+    display: flex;
+    gap: 0.8rem;
+}
+
+
+ #HistoriaGrid{
+    display: grid;
+    grid-template-areas: 
+    "cabeceraNH"
+    "Foto1"
+    "Foto2"
+    "Foto3"
+    "Foto4"
+    "Foto5";
+    grid-template-columns: repeat(1,1fr);
+ }
+ #HistoriaGrid div img{
+    width: 20rem;
+
+ }
+
+ #HistoriaGrid section div p{
+    align-content: center;
+    padding-top: 1rem;
+ }
+#MenuNG {
+    grid-area: cabeceraNH;
+}
+ #HistoriaGrid1{
+    grid-area: Foto1;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    background-color: rgb(235, 212, 245);
+    font-style: oblique;
+    padding: 1rem;
+    gap: 1rem;
+
+ }
+ #HistoriaGrid2 {
+    grid-area: Foto2;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    background-color: rgb(241, 220, 162);
+    font-style: oblique;
+    padding: 1rem;
+    gap: 1rem;
+ }
+
+ #HistoriaGrid3 {
+    grid-area: Foto3;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    background-color: rgb(164, 226, 230);
+    font-style: oblique;
+    padding: 1rem;
+    gap: 1rem;
+ }
+
+ #HistoriaGrid4 {
+    grid-area: Foto4;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    background-color: rgb(132, 253, 203);
+    font-style: oblique;
+    padding: 1rem;
+    gap: 1rem;
+ }
+
+ #HistoriaGrid5 {
+    grid-area: Foto5;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    background-color: rgb(241, 166, 223);
+    font-style: oblique;
+    padding: 1rem;
+    gap: 1rem;
+ }
+
+ @media screen and (min-width: 768px){
+
+ #HistoriaGrid section div p{
+    align-content: center;
+    padding-top: 1rem;
+ }
+
+
+ #HistoriaGrid div img{
+    width: 15rem;
+    padding: 1rem;
+
+ }
+ #HistoriaGrid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+ }
+ #HistoriaGrid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+ }
+ #HistoriaGrid3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+
+ }
+ #HistoriaGrid4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+ }
+ #HistoriaGrid5{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+ }
+}
+
+@media screen and (min-width: 1024px){
+    #HistoriaGrid{
+        display: grid;
+        grid-template-areas: 
+        "cabeceraNH cabeceraNH cabeceraNH"
+        "Foto1 Foto1 ."
+        ". Foto2 Foto2"
+        "Foto3 Foto3 ."
+        ". Foto4 Foto4"
+        "Foto5 Foto5 .";
+        grid-template-columns: repeat(3,1fr);
+     }
+
+       .Menu__ulNH li a{
+        font-size:large;
+        font-style: oblique;
+        flex-wrap: none ;
+       }
+    
+       .Menu__ulNH{
+        gap: 3rem ;
+        justify-content: flex-end;
+        align-content: flex-end;
+       }
+    
+     }
+    #HistoriaGrid section div p{
+        align-content: center;
+        padding-top: 1rem;
+     }
+    
+    
+     #HistoriaGrid div img{
+        width: 20 rem;
+        padding: 1rem;
+
+}
+
+.TextInsc p{
+    font-size: large;
+    font-style: oblique;
+    color: blueviolet;
+    font-weight: bold;
+    background-color: rgb(175, 238, 238);
+    padding: 5rem;
+    text-align: center;
+}
+
+.ImagenIns {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30rem;
+
+}
+
+.Inscripciones__Cuerpo{
+    background-color: rgb(189, 235, 235);
+}
+
+#GaleriaAct{
+background-image: url(../img/Fondo\ estrellas.jfif);
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    font-style: italic;
+
+
+}
+
+.GaleriaAct__Cuerpo{
+    width: 15rem;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    padding: 3rem;
+}
+
+.GaleriaAct__Cuerpo img{
+    border: 5px;
+    margin-top: 1rem;
+    display:flex;
+    align-items: flex-end;
+
 }

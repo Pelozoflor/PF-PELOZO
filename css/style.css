@@ -162,6 +162,10 @@ padding: 1rem;
     text-align: center;
 }
 
+#MapaUbicacion{
+    display: flex;
+    padding: 5rem 30rem;
+}
 /*Galeria*/
 
 .Galerias__Fondo{
@@ -560,12 +564,14 @@ background-image: url(../img/Fondo\ estrellas.jfif);
 
 }
 
+
+/*Inscripciones*/
 .TextInsc p{
     font-size: large;
     font-style: oblique;
-    color: blueviolet;
-    font-weight: bold;
-    background-color: rgb(175, 238, 238);
+    color: rgb(40, 19, 59);
+    font-weight:normal;
+    background-color: rgb(175, 197, 238);
     padding: 5rem;
     text-align: center;
 }
@@ -580,7 +586,7 @@ background-image: url(../img/Fondo\ estrellas.jfif);
 }
 
 .Inscripciones__Cuerpo{
-    background-color: rgb(189, 235, 235);
+    background-color: rgb(189, 190, 235);
 }
 
 #GaleriaAct{

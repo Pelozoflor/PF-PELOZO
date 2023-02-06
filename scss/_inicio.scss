@@ -1,0 +1,142 @@
+
+/*Frase de Portada*/
+
+.Portada{  
+    display: flex;
+    justify-items: center; 
+    padding: 1.5rem;
+    background-image: url(../img/soles.jfif);
+    background-size: 12rem 6rem
+
+}
+
+/*Parrafo-Frase*/
+
+.Cuerpo__Parrafo{
+    background-color: rgb(250, 219, 223);
+    padding: 3rem;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(172, 89, 165);
+    text-align: center;
+    line-height: 2;
+
+}
+
+   
+/*Galeria Inicio*/
+
+.GaleriaSalas__Cuerpo{
+    width: 15rem;
+    align-items: center;
+    text-align: center;
+
+      a img{
+        border: 5px;
+        margin-top: 1rem;
+    
+    }
+
+}
+
+/*Index Responsive*/
+#IndexResponsive {
+    display: grid;
+    grid-template-areas: 
+    "cabecera"
+    "Frase"
+    "Cuerpo"
+    "galeria"
+    "footer";
+    
+   grid-template-columns: repeat (1,1fr);
+   grid-template-rows: 1fr;
+   
+   height: 100vh;
+}
+
+#Menu {
+    grid-template-columns: cabecera;
+}
+#Frase_Responsive{
+    grid-area: Frase;
+}
+#Cuerpo_Responsive{
+    grid-area: Cuerpo;
+}
+
+#Cuerpo_Responsive{
+    font-size: small;
+}
+#Galeria_Responsive{
+    grid-area: galeria;
+}
+#GaleriaResponsive{
+    background-image: url(../img/Fondo\ estrellas.jfif);
+    padding: 2rem 4rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+#footer_Responsive{
+    grid-area: footer;
+}
+
+
+@media screen and (min-width: 768px) {
+    
+   #GaleriaResponsive{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.Menu__Secciones{
+    display: flex;
+    justify-content: center;
+}
+
+.Menu__ul li a{
+    font-size: medium;
+    gap: 2rem;
+}
+}
+
+@media screen and (min-width: 1024px) {
+   #Menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-end;
+    padding: 1rem;
+   }
+
+   .Menu__ul{
+    gap: 3rem ;
+    justify-content: flex-end;
+    align-content: flex-end;
+    padding-top: 4rem  ;
+         li a{
+            font-size:large;
+            font-style: oblique;
+            flex-wrap: none ;
+         }
+   }
+   .Portada{
+    display: flex;
+    justify-content: center;
+   }
+
+   footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+   }
+}

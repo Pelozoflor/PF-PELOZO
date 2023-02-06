@@ -1,0 +1,111 @@
+/*Galeria*/
+
+.Galerias__Fondo{
+    padding: 2rem;
+    height: $alto + 20;
+}
+
+.Galerias__Titulo{
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    align-content: center;
+    padding-top: .7rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+
+.BotonVolver {
+    @include pad-mar(15px,10px);
+    border-radius: 20px;
+    text-align:center;
+    color: black;
+}
+
+/*Medidas Imagenes Fotos*/
+.maximo {
+    width: $ancho;
+    height: $alto;
+    margin-left: 25rem;
+}
+
+.maximop{
+    width: $ancho;
+    height: $alto;
+    margin-left: 48rem;
+} 
+.ImagenPiratas{
+    width: $ancho;
+    height: $alto;
+}
+
+/*Maternal*/
+
+.Fondo__AM{
+    background-image: url(../img/GaleriaAnimalesMarinos/FondoAnimalesMarinos.jfif)
+
+}
+
+.Titulo__AM{
+    color: rgb(8, 8, 248);
+    background-color: aquamarine;
+
+}
+
+.Btn__GaleriaAM{
+    @extend .BotonVolver;
+    background-color: aquamarine;
+}
+
+/*Principitos*/
+.Titulo__P {
+    color: rgba(248, 73, 20, 0.87);
+    background-color: rgb(81, 134, 247);
+}
+
+.Fondo__P{
+    background-image: url(../img/GaleriaPrincipitos/Fondo.PNG);
+    background-repeat: no-repeat;
+    background-size: 150rem 60rem;
+    background-position-x: center;
+    
+}
+
+.Btn__GaleriaP{
+    @extend .BotonVolver;
+    background-color: chartreuse;
+}
+
+/*Piratas*/
+.Btn__GaleriaPiratas{
+    @extend .BotonVolver;
+    background-color: firebrick;
+}
+
+.Fondo__Piratas{
+    background-image: url(../img/GaleriaPiratas/Fondo.jpg);
+    background-repeat: unset;
+   
+}
+
+.Titulo__Piratas{
+    background-color: firebrick;
+    color: rgba(0, 0, 0, 0.473);
+}
+
+/*Detectives*/
+
+.Btn__GaleriaD {
+    @extend .BotonVolver;
+    background-color: darkgoldenrod;
+}
+.Fondo__D {
+    background-image: url(../img/GaleriaDetectives/Fondo.jfif);
+}
+
+.Titulo__D{
+    background-color: darkgoldenrod;
+    color: saddlebrown;
+}
+

@@ -1,0 +1,49 @@
+/*Inscripciones*/
+.TextInsc p{
+    font-size: large;
+    font-style: oblique;
+    color: rgb(40, 19, 59);
+    font-weight:normal;
+    background-color: rgb(175, 197, 238);
+    padding: 5rem;
+    text-align: center;
+}
+
+.ImagenIns {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30rem;
+
+}
+
+.Inscripciones__Cuerpo{
+    background-color: rgb(189, 190, 235);
+}
+
+#GaleriaAct{
+background-image: url(../img/Fondo\ estrellas.jfif);
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    font-style: italic;
+
+
+}
+
+.GaleriaAct__Cuerpo{
+    width: 15rem;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    padding: 3rem;
+}
+
+.GaleriaAct__Cuerpo img{
+    border: 5px;
+    margin-top: 1rem;
+    display:flex;
+    align-items: flex-end;
+
+}

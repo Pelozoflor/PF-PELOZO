@@ -1,0 +1,9 @@
+/*variables para medida imagenes*/
+
+$ancho: 30rem;
+$alto: 40rem;
+
+@mixin pad-mar ($pad,$mar){
+    padding: $pad;
+    margin: $mar;
+}

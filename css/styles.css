@@ -1,0 +1,296 @@
+/*variables para medida imagenes*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*Menu Cabecera de Pagina*/
+#Menu {
+  background-color: #fff06c;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#Menu h2 {
+  font-style: oblique;
+  color: red;
+  text-align: center;
+}
+#Menu div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+#Menu img {
+  width: 7rem;
+  padding-left: 8rem;
+}
+
+/*Secciones*/
+.Menu__Secciones {
+  display: flex;
+  font-size: small;
+  font-style: normal;
+  height: 2rem;
+  padding: 1rem 0.5rem;
+  justify-content: center;
+}
+.Menu__Secciones ul {
+  list-style-type: none;
+  display: flex;
+  gap: 0.8rem;
+}
+
+/*Pie de pagina*/
+footer {
+  padding: 2rem;
+  background-color: rgb(163, 250, 221);
+  align-items: center;
+  color: purple;
+}
+footer li {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  color: blueviolet;
+  font-weight: bold;
+}
+footer li a {
+  color: blueviolet;
+}
+
+/*Frase de Portada*/
+.Portada {
+  display: flex;
+  justify-items: center;
+  padding: 1.5rem;
+  background-image: url(../img/soles.jfif);
+  background-size: 12rem 6rem;
+}
+
+/*Parrafo-Frase*/
+.Cuerpo__Parrafo {
+  background-color: rgb(250, 219, 223);
+  padding: 3rem;
+  font-style: italic;
+  font-size: x-large;
+  font-weight: bold;
+  color: rgb(172, 89, 165);
+  text-align: center;
+  line-height: 2;
+}
+
+/*Galeria Inicio*/
+.GaleriaSalas__Cuerpo {
+  width: 15rem;
+  align-items: center;
+  text-align: center;
+}
+.GaleriaSalas__Cuerpo a img {
+  border: 5px;
+  margin-top: 1rem;
+}
+
+/*Index Responsive*/
+#IndexResponsive {
+  display: grid;
+  grid-template-areas: "cabecera" "Frase" "Cuerpo" "galeria" "footer";
+  grid-template-columns: repeat 1, 1fr;
+  grid-template-rows: 1fr;
+  height: 100vh;
+}
+
+#Menu {
+  grid-template-columns: cabecera;
+}
+
+#Frase_Responsive {
+  grid-area: Frase;
+}
+
+#Cuerpo_Responsive {
+  grid-area: Cuerpo;
+}
+
+#Cuerpo_Responsive {
+  font-size: small;
+}
+
+#Galeria_Responsive {
+  grid-area: galeria;
+}
+
+#GaleriaResponsive {
+  background-image: url(../img/Fondo\ estrellas.jfif);
+  padding: 2rem 4rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-style: italic;
+  justify-content: center;
+  justify-items: center;
+}
+
+#footer_Responsive {
+  grid-area: footer;
+}
+
+@media screen and (min-width: 768px) {
+  #GaleriaResponsive {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .Menu__Secciones {
+    display: flex;
+    justify-content: center;
+  }
+  .Menu__ul li a {
+    font-size: medium;
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #Menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-end;
+    padding: 1rem;
+  }
+  .Menu__ul {
+    gap: 3rem;
+    justify-content: flex-end;
+    align-content: flex-end;
+    padding-top: 4rem;
+  }
+  .Menu__ul li a {
+    font-size: large;
+    font-style: oblique;
+    flex-wrap: none;
+  }
+  .Portada {
+    display: flex;
+    justify-content: center;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+  }
+}
+/*Galeria*/
+.Galerias__Fondo {
+  padding: 2rem;
+  height: 60rem;
+}
+
+.Galerias__Titulo {
+  font-size: xx-large;
+  text-align: center;
+  font-weight: bolder;
+  align-content: center;
+  padding-top: 0.7rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.BotonVolver, .Btn__GaleriaD, .Btn__GaleriaPiratas, .Btn__GaleriaP, .Btn__GaleriaAM {
+  padding: 15px;
+  margin: 10px;
+  border-radius: 20px;
+  text-align: center;
+  color: black;
+}
+
+/*Medidas Imagenes Fotos*/
+.maximo {
+  width: 30rem;
+  height: 40rem;
+  margin-left: 25rem;
+}
+
+.maximop {
+  width: 30rem;
+  height: 40rem;
+  margin-left: 48rem;
+}
+
+.ImagenPiratas {
+  width: 30rem;
+  height: 40rem;
+}
+
+/*Maternal*/
+.Fondo__AM {
+  background-image: url(../img/GaleriaAnimalesMarinos/FondoAnimalesMarinos.jfif);
+}
+
+.Titulo__AM {
+  color: rgb(8, 8, 248);
+  background-color: aquamarine;
+}
+
+.Btn__GaleriaAM {
+  background-color: aquamarine;
+}
+
+/*Principitos*/
+.Titulo__P {
+  color: rgba(248, 73, 20, 0.87);
+  background-color: rgb(81, 134, 247);
+}
+
+.Fondo__P {
+  background-image: url(../img/GaleriaPrincipitos/Fondo.PNG);
+  background-repeat: no-repeat;
+  background-size: 150rem 60rem;
+  background-position-x: center;
+}
+
+.Btn__GaleriaP {
+  background-color: chartreuse;
+}
+
+/*Piratas*/
+.Btn__GaleriaPiratas {
+  background-color: firebrick;
+}
+
+.Fondo__Piratas {
+  background-image: url(../img/GaleriaPiratas/Fondo.jpg);
+  background-repeat: unset;
+}
+
+.Titulo__Piratas {
+  background-color: firebrick;
+  color: rgba(0, 0, 0, 0.473);
+}
+
+/*Detectives*/
+.Btn__GaleriaD {
+  background-color: darkgoldenrod;
+}
+
+.Fondo__D {
+  background-image: url(../img/GaleriaDetectives/Fondo.jfif);
+}
+
+.Titulo__D {
+  background-color: darkgoldenrod;
+  color: saddlebrown;
+}
+
+/*# sourceMappingURL=styles.css.map */

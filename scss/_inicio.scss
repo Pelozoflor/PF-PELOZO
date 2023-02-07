@@ -2,8 +2,7 @@
 /*Frase de Portada*/
 
 .Portada{  
-    display: flex;
-    justify-items: center; 
+    @include flex-jcenter;
     padding: 1.5rem;
     background-image: url(../img/soles.jfif);
     background-size: 12rem 6rem
@@ -28,7 +27,7 @@
 /*Galeria Inicio*/
 
 .GaleriaSalas__Cuerpo{
-    width: 15rem;
+    width: calc($ancho/2);
     align-items: center;
     text-align: center;
 
@@ -76,11 +75,9 @@
     background-image: url(../img/Fondo\ estrellas.jfif);
     padding: 2rem 4rem;
     gap: 1rem;
-    display: flex;
+    @include flex-jcenter;
     flex-direction: column;
     font-style: italic;
-    justify-content: center;
-    justify-items: center;
 }
 
 
@@ -89,7 +86,7 @@
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
     
    #GaleriaResponsive{
     display: flex;
@@ -97,9 +94,14 @@
     flex-wrap: wrap;
     gap: 3rem;
 }
+
+#Menu {
+    img{
+        padding-left: 20rem;
+     }
+}
 .Menu__Secciones{
-    display: flex;
-    justify-content: center;
+    @include flex-jcenter;
 }
 
 .Menu__ul li a{
@@ -108,13 +110,18 @@
 }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: $ordenador) {
    #Menu{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-content: flex-end;
     padding: 1rem;
+
+    img{
+        width: 10rem;
+        padding-left: 3rem;
+     }
    }
 
    .Menu__ul{
@@ -129,14 +136,11 @@
          }
    }
    .Portada{
-    display: flex;
-    justify-content: center;
+    @include flex-jcenter;
    }
 
    footer ul{
-    display: flex;
+    @include flex-jcenter;
     flex-direction: row;
-    justify-content: center;
-    justify-items: center;
    }
 }

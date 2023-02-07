@@ -1,0 +1,25 @@
+#GaleriaAct{
+    background-image: url(../img/Fondo\ estrellas.jfif);
+        padding: 3rem;
+        display: flex;
+        flex-direction: row;
+        font-style: italic;
+    
+    
+    }
+    
+    .GaleriaAct__Cuerpo{
+        width: 15rem;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+        padding: 3rem;
+
+            img{
+                border: 5px;
+                margin-top: 1rem;
+                display:flex;
+                align-items: flex-end;
+          
+    }
+}

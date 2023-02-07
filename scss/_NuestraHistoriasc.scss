@@ -3,26 +3,43 @@
  #MenuNG{
     background-color:#fff06c;
     padding-top: 1rem;
-    display: flex;
+    @include flex-jcenter;
     flex-direction: column;
 }
 
+
 .Menu__SeccionesNH{
-    display: flex;
+   @include flex-jcenter;
     font-size:small;
     font-style: normal;
     height: 2rem;
     padding: 1rem 0.5rem;
-    justify-content: center;
 
+      & ul{
+         list-style-type: none;
+         display: flex;
+         gap: 0.8rem;
+      }
 }
 
-.Menu__ulNH{
-    list-style-type: none;
-    display: flex;
-    gap: 0.8rem;
-}
+#MenuN{
+   div {
+      @include flex-jcenter;
+      flex-direction: column;
+      align-items: center;
 
+          h2{
+             font-style: oblique;
+             color: red;
+             text-align: center;
+               
+         }
+     }
+
+      & .Menu__Logo {
+         width: 7rem;
+      }
+}
 
  #HistoriaGrid{
     display: grid;
@@ -34,16 +51,23 @@
     "Foto4"
     "Foto5";
     grid-template-columns: repeat(1,1fr);
- }
- #HistoriaGrid div img{
-    width: $ancho - 10;
+}
+
+
+
+ 
+
+ #HistoriaGrid div {
+   img{
+    width: $ancho;
 
  }
-
- #HistoriaGrid section div p{
+   p{
     align-content: center;
     padding-top: 1rem;
  }
+}
+
 #MenuNG {
     grid-area: cabeceraNH;
 }
@@ -90,7 +114,7 @@
         "Foto5 Foto5 .";
         grid-template-columns: repeat(3,1fr);
      }
-    
+
        .Menu__ulNH{
         gap: 3rem ;
         justify-content: flex-end;

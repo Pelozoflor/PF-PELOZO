@@ -1,49 +1,43 @@
 /*Inscripciones*/
-.TextInsc p{
-    font-size: large;
-    font-style: oblique;
-    color: rgb(40, 19, 59);
-    font-weight:normal;
-    background-color: rgb(175, 197, 238);
-    padding: 5rem;
-    text-align: center;
-}
 
 .ImagenIns {
-    width: 20rem;
-    display: flex;
+    width: $ancho - 10;
+    @include flex-jcenter;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 30rem;
+    align-items: center;
+    padding: 1rem;
 
+    
 }
 
 .Inscripciones__Cuerpo{
     background-color: rgb(189, 190, 235);
-}
+    overflow: hidden;
+       p{
+            font-size: large;
+            font-style: normal;
+            color: rgb(40, 19, 59);
+            font-weight:normal;
+            line-height: 2rem;
+            background-color: rgb(175, 197, 238);
+            padding: 5rem;
+            text-align: center;
 
-#GaleriaAct{
-background-image: url(../img/Fondo\ estrellas.jfif);
-    padding: 3rem;
-    display: flex;
-    flex-direction: row;
-    font-style: italic;
-
-
-}
-
-.GaleriaAct__Cuerpo{
-    width: 15rem;
-    align-items: center;
-    text-align: center;
-    gap: 3rem;
-    padding: 3rem;
-}
-
-.GaleriaAct__Cuerpo img{
-    border: 5px;
-    margin-top: 1rem;
-    display:flex;
-    align-items: flex-end;
+            a{
+                font-weight: bolder;
+             }
+    }
 
 }
+
+@media screen and (min-width: $tablet){
+.ImagenIns{
+    padding: 3rem 14rem;
+    }
+}
+
+@media screen and (min-width: $ordenador){
+    .ImagenIns{
+        padding: 3rem 20rem ;
+        }
+    }

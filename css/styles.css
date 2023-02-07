@@ -31,10 +31,11 @@ img {
   justify-content: center;
   justify-items: center;
   flex-direction: column;
+  align-items: center;
 }
 #Menu img {
   width: 7rem;
-  padding-left: 8rem;
+  /*padding-left: 8rem;*/
 }
 
 /*Secciones*/
@@ -156,9 +157,6 @@ footer li a {
     flex-wrap: wrap;
     gap: 3rem;
   }
-  #Menu img {
-    padding-left: 20rem;
-  }
   .Menu__Secciones {
     display: flex;
     justify-content: center;
@@ -176,10 +174,6 @@ footer li a {
     justify-content: space-around;
     align-content: flex-end;
     padding: 1rem;
-  }
-  #Menu img {
-    width: 10rem;
-    padding-left: 3rem;
   }
   .Menu__ul {
     gap: 3rem;
@@ -209,22 +203,40 @@ footer li a {
   background-color: #fff06c;
   padding-top: 1rem;
   display: flex;
+  justify-content: center;
+  justify-items: center;
   flex-direction: column;
 }
 
 .Menu__SeccionesNH {
   display: flex;
+  justify-content: center;
+  justify-items: center;
   font-size: small;
   font-style: normal;
   height: 2rem;
   padding: 1rem 0.5rem;
-  justify-content: center;
 }
-
-.Menu__ulNH {
+.Menu__SeccionesNH ul {
   list-style-type: none;
   display: flex;
   gap: 0.8rem;
+}
+
+#MenuN div {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+#MenuN div h2 {
+  font-style: oblique;
+  color: red;
+  text-align: center;
+}
+#MenuN .Menu__Logo {
+  width: 7rem;
 }
 
 #HistoriaGrid {
@@ -234,10 +246,9 @@ footer li a {
 }
 
 #HistoriaGrid div img {
-  width: 20rem;
+  width: 30rem;
 }
-
-#HistoriaGrid section div p {
+#HistoriaGrid div p {
   align-content: center;
   padding-top: 1rem;
 }
@@ -436,9 +447,10 @@ footer li a {
 
 #GaleriaAct {
   background-image: url(../img/Fondo\ estrellas.jfif);
-  padding: 3rem;
+  padding: 1rem;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   font-style: italic;
 }
 
@@ -446,7 +458,7 @@ footer li a {
   width: 15rem;
   align-items: center;
   text-align: center;
-  gap: 3rem;
+  gap: 2rem;
   padding: 3rem;
 }
 .GaleriaAct__Cuerpo img {
@@ -462,12 +474,14 @@ footer li a {
   font-size: medium;
   font-weight: bold;
   color: rgb(54, 53, 53);
-  margin: 2rem 30rem;
-  text-align: end;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   padding: 2rem;
 }
 .Formulario div {
-  align-content: flex-end;
+  align-content: center;
   padding: 1rem;
 }
 .Formulario h3 {
@@ -476,7 +490,73 @@ footer li a {
 
 #MapaUbicacion {
   display: flex;
-  padding: 5rem 30rem;
+  padding: 4rem;
+  height: 15rem;
+  width: 15rem;
+}
+
+@media screen and (min-width: 768px) {
+  .Formulario {
+    margin-left: 8rem;
+  }
+  #MapaUbicacion {
+    display: flex;
+    align-items: center;
+    padding-left: 12rem;
+    width: 25rem;
+    height: 25rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .Formulario {
+    margin: 5rem 30rem;
+  }
+  #MapaUbicacion {
+    display: flex;
+    align-items: center;
+    padding-left: 25rem;
+    width: 30rem;
+    height: 30rem;
+  }
+}
+/*Inscripciones*/
+.ImagenIns {
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.Inscripciones__Cuerpo {
+  background-color: rgb(189, 190, 235);
+  overflow: hidden;
+}
+.Inscripciones__Cuerpo p {
+  font-size: large;
+  font-style: normal;
+  color: rgb(40, 19, 59);
+  font-weight: normal;
+  line-height: 2rem;
+  background-color: rgb(175, 197, 238);
+  padding: 5rem;
+  text-align: center;
+}
+.Inscripciones__Cuerpo p a {
+  font-weight: bolder;
+}
+
+@media screen and (min-width: 768px) {
+  .ImagenIns {
+    padding: 3rem 14rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .ImagenIns {
+    padding: 3rem 20rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -35,7 +35,6 @@ img {
 }
 #Menu img {
   width: 7rem;
-  /*padding-left: 8rem;*/
 }
 
 /*Secciones*/
@@ -52,6 +51,14 @@ img {
   list-style-type: none;
   display: flex;
   gap: 0.8rem;
+}
+.Menu__Secciones li a:hover {
+  background-color: rgba(255, 0, 0, 0.856);
+  color: #fff06c;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 10%;
+  transition: all 0.5s;
 }
 
 /*Pie de pagina*/
@@ -221,6 +228,14 @@ footer li a {
   list-style-type: none;
   display: flex;
   gap: 0.8rem;
+}
+.Menu__SeccionesNH li a:hover {
+  background-color: rgba(255, 0, 0, 0.856);
+  color: #fff06c;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 10%;
+  transition: all 0.5s;
 }
 
 #MenuN div {
@@ -458,14 +473,19 @@ footer li a {
   width: 15rem;
   align-items: center;
   text-align: center;
-  gap: 2rem;
-  padding: 3rem;
+  gap: 1rem;
+  padding: 2.5rem;
 }
 .GaleriaAct__Cuerpo img {
   border: 5px;
   margin-top: 1rem;
   display: flex;
   align-items: flex-end;
+  width: 240px;
+  height: 320px;
+}
+.GaleriaAct__Cuerpo img:hover {
+  transform: scale(1.1);
 }
 
 /*Formulario Contacto*/

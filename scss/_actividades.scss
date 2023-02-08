@@ -13,15 +13,21 @@
         width: 15rem;
         align-items: center;
         text-align: center;
-        gap: 2rem;
-        padding: 3rem;
+        gap: 1rem;
+        padding: 2.5rem;
 
             img{
                 border: 5px;
                 margin-top: 1rem;
                 display:flex;
                 align-items: flex-end;
-          
+                width: 240px;
+                height: 320px;
     }
+
+            img:hover{
+                transform: scale(1.1);
+            }
 }
+
 

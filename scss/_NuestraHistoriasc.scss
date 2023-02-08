@@ -1,0 +1,148 @@
+/*Nuestra Historia*/
+
+ #MenuNG{
+    background-color:#fff06c;
+    padding-top: 1rem;
+    @include flex-jcenter;
+    flex-direction: column;
+}
+
+
+.Menu__SeccionesNH{
+   @include flex-jcenter;
+    font-size:small;
+    font-style: normal;
+    height: 2rem;
+    padding: 1rem 0.5rem;
+
+      & ul{
+         list-style-type: none;
+         display: flex;
+         gap: 0.8rem;
+      }
+      & li a:hover {
+         background-color: rgba(255, 0, 0, 0.856);
+         color: #fff06c;
+         font-weight: bold;
+         padding: 1rem;
+         border-radius: 10%;
+         transition: all .5s;
+        }
+}
+
+#MenuN{
+   div {
+      @include flex-jcenter;
+      flex-direction: column;
+      align-items: center;
+
+          h2{
+             font-style: oblique;
+             color: red;
+             text-align: center;
+               
+         }
+     }
+
+      & .Menu__Logo {
+         width: 7rem;
+      }
+}
+
+ #HistoriaGrid{
+    display: grid;
+    grid-template-areas: 
+    "cabeceraNH"
+    "Foto1"
+    "Foto2"
+    "Foto3"
+    "Foto4"
+    "Foto5";
+    grid-template-columns: repeat(1,1fr);
+}
+
+
+ #HistoriaGrid div {
+   img{
+    width: $ancho;
+
+ }
+   p{
+    align-content: center;
+    padding-top: 1rem;
+ }
+}
+
+#MenuNG {
+    grid-area: cabeceraNH;
+}
+ #HistoriaGrid1{
+    grid-area: Foto1;
+    @include flex-column-center-oblique;
+    background-color: rgb(235, 212, 245);
+
+
+ }
+ #HistoriaGrid2 {
+    grid-area: Foto2;
+    @include flex-column-center-oblique;
+    background-color: rgb(241, 220, 162);
+    font-style: oblique;
+ }
+
+ #HistoriaGrid3 {
+    grid-area: Foto3;
+    @include flex-column-center-oblique;
+    background-color: rgb(164, 226, 230);
+ }
+
+ #HistoriaGrid4 {
+    grid-area: Foto4;
+    @include flex-column-center-oblique;
+    background-color: rgb(132, 253, 203);
+ }
+
+ #HistoriaGrid5 {
+    grid-area: Foto5;
+    @include flex-column-center-oblique;
+    background-color: rgb(241, 166, 223);
+ }
+ @media screen and (min-width: $ordenador){
+    #HistoriaGrid{
+        display: grid;
+        grid-template-areas: 
+        "cabeceraNH cabeceraNH cabeceraNH"
+        "Foto1 Foto1 ."
+        ". Foto2 Foto2"
+        "Foto3 Foto3 ."
+        ". Foto4 Foto4"
+        "Foto5 Foto5 .";
+        grid-template-columns: repeat(3,1fr);
+     }
+
+       .Menu__ulNH{
+        gap: 3rem ;
+        justify-content: flex-end;
+        align-content: flex-end;
+
+           li a{
+            font-size:large;
+            font-style: oblique;
+            flex-wrap: none ;
+        }
+       }
+    
+     
+      #HistoriaGrid section div{
+         p{
+         align-content: center;
+         padding-top: 1rem;
+      }
+      
+         img{
+         width: $ancho - 10;
+         padding: 1rem;
+
+      }
+   }
+}

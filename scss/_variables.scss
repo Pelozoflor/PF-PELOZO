@@ -1,0 +1,28 @@
+/*variables para medida imagenes*/
+
+$ancho: 30rem;
+$alto: 40rem;
+$celular: 375px;
+$tablet: 768px;
+$ordenador: 1024px;
+
+@mixin pad-mar ($pad,$mar){
+    padding: $pad;
+    margin: $mar;
+}
+
+@mixin flex-column-center-oblique{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    font-style: oblique;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+@mixin flex-jcenter{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}

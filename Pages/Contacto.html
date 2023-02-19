@@ -11,16 +11,20 @@
     <meta name="description" content="Contactate con nosotros">
 
     <link rel="shortcut icon" href="../img/Logo.jpeg" type="image/x-icon">
+    
+    <!--Link a mi CSS-->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-<header id="Menu">
+ <!--Menu de Navegacion-->
+ <header id="Menu">
     <div>
         <h2>Fantasia Jardin de Infantes</h2>
         <a href="../index.html"><img class="Menu__Logo" src="../img/Logo.jpeg" alt="Logo Fantasia Jardin de Infantes">
         </a>
     </div>
+
     <div class="Menu__Secciones">
         <ul class="Menu__ul">
             <li>
@@ -43,45 +47,50 @@
             </li>
         </ul>
     </div>
-   
-    
-</header>
+ </header>
 
+ <!--Formulario de Contacto-->
+ <main>
     <section>
-       <form class="Formulario" action="">
-        <h3>Complete el formulario y nos contactaremos a la brevedad</h3>
-        <fieldset>       
+     <form class="Formulario" action="">
+         <h3>Complete el formulario y nos contactaremos a la brevedad</h3>
+         <fieldset>   
+
         <div>
-                <label for="NombreYapellido">Nombre y Apellido</label>
-                <input type="text" name="NombreYapellido" id="">
+            <label for="NombreYapellido">Nombre y Apellido</label>
+            <input type="text" name="NombreYapellido" id="">
         </div>
+        
         <div>
             <label for="Telefono/Celular">Teléfono/Celular</label>
             <input type="tel" name="Telefono/Celular" id="">
         </div>
+        
         <div>
             <label for="Email">Correo Electrónico</label>
             <input type="email" name="Email" id="">
         </div>
+        
         <div>
             <label for="Comentario">Comentario</label>
             <textarea name="Comentario" id="" cols="30" rows="10"></textarea>
         </div>
+        
         <div>
             <input type="button" value="Enviar">
         </div>
         
         </fieldset>
-        </form>
-        
+        </form>       
     </section>
-    <section >
-        <p>Donde nos encontramos?</p>
-        <iframe id="MapaUbicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.8895909874827!2d-58.469846499999996!3d-34.7331773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcce70bc89c801%3A0x14a579b26a8df6dc!2sCafayate%20620%2C%20B1827%20Ingeniero%20Budge%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1675111562084!5m2!1ses-419!2sar" style="border: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+ </main>
 
-<footer id="footer_Responsive">
-        
+ <section >
+   <iframe id="MapaUbicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.8895909874827!2d-58.469846499999996!3d-34.7331773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcce70bc89c801%3A0x14a579b26a8df6dc!2sCafayate%20620%2C%20B1827%20Ingeniero%20Budge%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1675111562084!5m2!1ses-419!2sar" style="border: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ </section>
+
+ <!--Pie de Pagina-->
+ <footer id="footer_Responsive">    
     <ul>
         <li>
             <iconify-icon icon="bxl:instagram"></iconify-icon>
@@ -93,11 +102,13 @@
         </li>
         <li>
             <iconify-icon icon="mdi:linkedin"></iconify-icon>
-           <p> LinkedIn Jardin Fantasia </p></li>
-       </ul>
+           <p> LinkedIn Jardin Fantasia </p>
+        </li>
+    </ul>
+ </footer>
 
+ <!--Scripts-->
+ <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
 
-</footer>
-<script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
 </body>
 </html>
